@@ -11,6 +11,7 @@ import Projects from "./compo/Projects";
 import Intro from "./compo/Intro";
 import Skills from "./compo/Skills";
 import ProjectsPage from "./compo/ProjectsPage";
+// import joey from "/joey_giphy.gif";
 
 export const Emoji = styled.span`
   font-size: 30px;
@@ -35,15 +36,20 @@ const Container = styled.div`
   overflow-x: hidden;
 `;
 
-const HomeHeading = styled(Link)`
+const HomeHeading = styled.div`
   position: absolute;
   top: 10px;
   color: white;
-  z-index: 20;
+  z-index: 50;
   left: 30px;
   /* transform: rotate(-90deg); */
   text-decoration: none;
   cursor: pointer;
+  & > * {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+  }
   @media (max-width: 950px) {
     font-size: 12px;
     left: 15px;
@@ -57,8 +63,10 @@ function App() {
         <Intro />
         <Skills />
         <Projects />
-        <HomeHeading to="/">
-          The one with Portfolio <Emoji> 🚀 </Emoji>
+        <HomeHeading>
+          <Link to="/">
+            The one with Portfolio <Emoji> 🚀 </Emoji>
+          </Link>
         </HomeHeading>
         <ParticlesBackground />
         <Routes>

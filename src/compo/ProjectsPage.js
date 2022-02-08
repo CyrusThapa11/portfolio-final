@@ -1,12 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import Heading from "./Heading";
-import mern1 from "../imgs/crisis-stbl.png";
-import mern2 from "../imgs/mern-2.png";
-import static1 from "../imgs/static-1.png";
-import static2 from "../imgs/static-2.png";
-import static3 from "../imgs/static-3.png";
-import slackclone from "../imgs/slackclone.png";
 
 const Container = styled.div`
   z-index: 20;
@@ -112,21 +106,21 @@ const ProjectsPage = () => {
       <Container>
         <BoxContainer>
           <Box>
-            <Image src={mern1} style={{ borderRadius: "10px" }} />
+            <Image src="/crisis-stbl.png" style={{ borderRadius: "10px" }} />
             {/* <Text>
               nobis in repellat id dolore blanditiis tempora exercitationem
               dignissimos
             </Text> */}
           </Box>
           <Box>
-            <Image src={mern2} style={{ borderRadius: "10px" }} />
+            <Image src="/mern-2.png" style={{ borderRadius: "10px" }} />
             {/* <Text>
               nobis in repellat id dolore blanditiis tempora exercitationem
               dignissimos
             </Text> */}
           </Box>
           <Box>
-            <Image src={slackclone} style={{ borderRadius: "10px" }} />
+            <Image src="/slackclone.png" style={{ borderRadius: "10px" }} />
             {/* <Text>
               nobis in repellat id dolore blanditiis tempora exercitationem
               dignissimos
@@ -136,21 +130,21 @@ const ProjectsPage = () => {
 
         <BoxContainer>
           <Box>
-            <Image src={static1} style={{ borderRadius: "10px" }} />
+            <Image src="/static-1.png" style={{ borderRadius: "10px" }} />
             {/* <Text>
               nobis in repellat id dolore blanditiis tempora exercitationem
               dignissimos
             </Text> */}
           </Box>
           <Box>
-            <Image src={static2} style={{ borderRadius: "10px" }} />
+            <Image src="/static-2.png" style={{ borderRadius: "10px" }} />
             {/* <Text>
               nobis in repellat id dolore blanditiis tempora exercitationem
               dignissimos
             </Text> */}
           </Box>
           <Box>
-            <Image src={static3} style={{ borderRadius: "10px" }} />
+            <Image src="/static-3.png" style={{ borderRadius: "10px" }} />
             {/* <Text>
               nobis in repellat id dolore blanditiis tempora exercitationem
               dignissimos

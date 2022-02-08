@@ -1,8 +1,6 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
-import joey from "../imgs/joey_giphy.gif";
 import Heading from "./Heading";
-import cperk from "../imgs/c-perk.png";
 
 const Container = styled.div`
   height: 80vh;
@@ -49,7 +47,10 @@ const Home = () => {
       <Container>
         <Box>
           {/* <ImageContainer> */}
-          <Image src={cperk} />
+          <Image
+            // src={cperk}
+            src="/c-perk.png"
+          />
           {/* </ImageContainer> */}
         </Box>{" "}
       </Container>

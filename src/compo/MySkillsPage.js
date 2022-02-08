@@ -9,15 +9,18 @@ import { DiMongodb } from "react-icons/di";
 import { DiPython } from "react-icons/di";
 import { DiNodejsSmall } from "react-icons/di";
 import Heading from "./Heading";
-import skillsImage from "../imgs/skills.jpg";
 
 const Container = styled.div`
+  position: relative;
   z-index: 20;
   display: flex;
   justify-content: space-around;
   align-items: center;
   color: white;
   margin: 10px 70px;
+  /* margin-top: 1.5rem; */
+  height: auto;
+  /* overflow: hidden; */
   flex-wrap: wrap;
   @media (max-width: 1000px) {
     flex-wrap: wrap;
@@ -41,14 +44,6 @@ const Box = styled.div`
   }
 `;
 
-const ImagesContainer = styled.div`
-  flex: 1;
-  display: flex;
-  flex-wrap: wrap;
-  max-height: 50vh;
-  position: relative;
-`;
-
 const Icons = styled.div`
   font-size: 45px;
   color: white;
@@ -65,6 +60,9 @@ const Icons = styled.div`
     border-radius: 50%;
     background: transparent;
   }
+  @media (max-width: 510px) {
+    flex-wrap: wrap;
+  }
 `;
 
 const Text = styled.div`
@@ -77,7 +75,7 @@ const Text = styled.div`
     font-size: 0.98rem;
   }
 
-  @media (max-width: 540px) {
+  @media (max-width: 640px) {
     letter-spacing: 1px;
     font-size: 0.8rem;
     padding: 5px;
@@ -90,15 +88,7 @@ const Image = styled.img`
   min-width: 300px;
   top: 0;
 `;
-const Image2 = styled.img`
-  src: ${(props) => props.src};
-  height: auto;
-  width: 70%;
-  position: absolute;
-  right: 50%;
-  top: 50%;
-  transform: translate(50%, -50%);
-`;
+
 const MySkillsPage = () => {
   return (
     <>
@@ -110,14 +100,14 @@ const MySkillsPage = () => {
           }}
         >
           <Icons>
-            <DiBootstrap />
-            <DiGithubBadge />
-            <DiReact />
-            <DiMongodb />
-            <DiPython />
-            <DiNodejsSmall />
-            <DiJavascript1 />
-            <DiCss3 />
+            <DiBootstrap style={{ padding: "4px", margin: "5px" }} />
+            <DiGithubBadge style={{ padding: "4px", margin: "5px" }} />
+            <DiReact style={{ padding: "4px", margin: "5px" }} />
+            <DiMongodb style={{ padding: "4px", margin: "5px" }} />
+            <DiPython style={{ padding: "4px", margin: "5px" }} />
+            <DiNodejsSmall style={{ padding: "4px", margin: "5px" }} />
+            <DiJavascript1 style={{ padding: "4px", margin: "5px" }} />
+            <DiCss3 style={{ padding: "4px", margin: "5px" }} />
           </Icons>
           <Text>
             My skill creative skills include React, Express, NodeJs, MongoDB.
@@ -128,7 +118,7 @@ const MySkillsPage = () => {
           </Text>
         </Box>
         <Box style={{ paddingTop: "60px" }}>
-          <Image src={skillsImage} />
+          <Image src="/skills.jpg" />
         </Box>
       </Container>
     </>

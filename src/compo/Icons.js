@@ -3,7 +3,6 @@ import { BsInstagram } from "react-icons/bs";
 import { BsFacebook } from "react-icons/bs";
 import { BsTwitter } from "react-icons/bs";
 import { BsLinkedin, BsGithub } from "react-icons/bs";
-import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const Box = styled.div`
@@ -27,8 +26,6 @@ const Box = styled.div`
 
   @media (max-width: 570px) {
     left: 10px;
-    /* bottom: -12px; */
-    /* height: 480px; */
   }
 `;
 
@@ -40,35 +37,50 @@ const Icons = ({ icon }) => {
         rel="noreferrer"
         target="_blank"
       >
-        <BsInstagram style={{ color: "#feff10", cursor: "pointer" }} />
+        <BsInstagram
+          style={{ color: "#feff10", cursor: "pointer" }}
+          className="iconss"
+        />
       </a>
       <a
         href="https://www.facebook.com/cyrus.thapa.180"
         rel="noreferrer"
         target="_blank"
       >
-        <BsFacebook style={{ color: "#ff3102", cursor: "pointer" }} />
+        <BsFacebook
+          style={{ color: "#ff3102", cursor: "pointer" }}
+          className="iconss"
+        />
       </a>
       <a
         href="https://twitter.com/CyrusThapa2"
         rel="noreferrer"
         target="_blank"
       >
-        <BsTwitter style={{ color: "#3e4fff", cursor: "pointer" }} />
+        <BsTwitter
+          style={{ color: "#3e4fff", cursor: "pointer" }}
+          className="iconss"
+        />
       </a>
       <a
         href="https://www.linkedin.com/in/cyrusthapa/"
         rel="noreferrer"
         target="_blank"
       >
-        <BsLinkedin style={{ color: "#FFF580", cursor: "pointer" }} />
+        <BsLinkedin
+          style={{ color: "#FFF580", cursor: "pointer" }}
+          className="iconss"
+        />
       </a>
       <a
         href="https://github.com/copyNinja1219"
         rel="noreferrer"
         target="_blank"
       >
-        <BsGithub style={{ color: "#FFF580", cursor: "pointer" }} />
+        <BsGithub
+          style={{ color: "#FFF580", cursor: "pointer" }}
+          className="iconss"
+        />
       </a>
     </Box>
   );

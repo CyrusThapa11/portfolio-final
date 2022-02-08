@@ -6,7 +6,7 @@ import { Emoji } from "../App";
 const Box = styled.div`
   position: absolute;
   right: -2rem;
-  z-index: 40;
+  z-index: 50;
   transform: rotate(90deg);
   & > .link {
     text-decoration: none;

@@ -1,8 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import frame from "../imgs/frame2.png";
-import profileImage from "../imgs/profileImage.png";
-import Intro from "../imgs/chandler-friends.gif";
 import Heading from "./Heading";
 
 const Container = styled.div`
@@ -117,7 +114,7 @@ const AboutPage = () => {
         <Box>
           <InnerBox>
             <ImageContainer>
-              <Image src={Intro} />
+              <Image src="/chandler-friends.gif" />
             </ImageContainer>
             <AboutText>
               <Title>Hey Hey Hey !!</Title>
@@ -132,8 +129,8 @@ const AboutPage = () => {
         </Box>
         <Box>
           <ImageContainer>
-            <Image src={frame} />
-            <Image2 src={profileImage} />
+            <Image src="/frame2.png" />
+            <Image2 src="/profileImage.png" />
           </ImageContainer>
         </Box>
       </Container>
