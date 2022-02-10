@@ -47,7 +47,7 @@ const particleConfig = {
       color: {
         value: "#ffffff",
       },
-      distance: 150,
+      distance: 110,
       enable: true,
       opacity: 0.7,
     },
@@ -65,18 +65,18 @@ const particleConfig = {
         right: "out",
         top: "out",
       },
-      speed: 6,
+      speed: 3,
     },
     number: {
       density: {
         enable: true,
       },
-      value: 80,
+      value: 40,
     },
     opacity: {
       value: 0.7,
       animation: {
-        speed: 0.4,
+        speed: 0.1,
         minimumValue: 0.1,
       },
     },
@@ -89,7 +89,7 @@ const particleConfig = {
         max: 9,
       },
       animation: {
-        speed: 20,
+        speed: 3,
         minimumValue: 0.5,
       },
     },
